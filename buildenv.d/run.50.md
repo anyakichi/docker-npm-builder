@@ -1,6 +1,6 @@
-Run default script.
+Run start script.
 
 ```
 $ . <(buildenv setup)
-$ ${NPM} run ${DEFAULT_SCRIPT}
+$ ${NPM} run ${SCRIPT_START}
 ```

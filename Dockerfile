@@ -11,7 +11,9 @@ RUN \
   && rm -rf /var/lib/apt/lists/*
 
 RUN \
-  useradd -ms /bin/bash builder \
+  usermod -l builder -d /home/builder node \
+  && groupmod --new-name builder node \
+  && mv /home/node /home/builder \
   && echo "builder ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
 USER builder

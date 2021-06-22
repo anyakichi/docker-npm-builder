@@ -26,7 +26,8 @@ WORKDIR /home/builder
 ENV \
   DEFAULT_SCRIPT=start \
   GIT_REPO="" \
-  LANG=C.UTF-8
+  LANG=C.UTF-8 \
+  NODE_ENV=production
 
 COPY buildenv/entrypoint.sh /usr/local/sbin/entrypoint
 COPY buildenv/buildenv.sh /usr/local/bin/buildenv

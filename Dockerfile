@@ -27,7 +27,8 @@ ENV \
   DEFAULT_SCRIPT=start \
   GIT_REPO="" \
   LANG=C.UTF-8 \
-  NODE_ENV=production
+  NODE_ENV=production \
+  NPM=npm
 
 COPY buildenv/entrypoint.sh /usr/local/sbin/entrypoint
 COPY buildenv/buildenv.sh /usr/local/bin/buildenv

@@ -7,5 +7,5 @@ $ . <(buildenv setup)
 Install dependencies.
 
 ```
-$ npm install
+$ ${NPM} install
 ```

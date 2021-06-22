@@ -28,7 +28,6 @@ WORKDIR /home/builder
 ENV \
   GIT_REPO="" \
   LANG=C.UTF-8 \
-  NODE_ENV=production \
   NPM=npm \
   SCRIPT_BUILD=build \
   SCRIPT_START=start

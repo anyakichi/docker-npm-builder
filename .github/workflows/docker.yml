@@ -8,6 +8,8 @@ jobs:
         tag: [lts-slim, lts, slim, latest]
     steps:
       - uses: actions/checkout@v2
+        with:
+          submodules: true
       - uses: docker/metadata-action@v3
         id: meta
         with:
